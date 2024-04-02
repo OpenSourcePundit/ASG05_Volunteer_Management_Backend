@@ -1,11 +1,8 @@
-
-
-import app from "./app.js";
-import connectDB from "./config/data.js";
-
-
+import app from './app.js';
+import connectDB from './config/data.js';
+const PORT = process.env.PORT || 5000;
 connectDB();
 
-app.listen(process.env.PORT,()=>{
-    console.log(`server is running on port ${process.env.PORT}`)
+app.listen(PORT, ()=>{
+    console.log(`server listening on port ${PORT} on ${process.env.NODE_ENV} mode`);
 })
