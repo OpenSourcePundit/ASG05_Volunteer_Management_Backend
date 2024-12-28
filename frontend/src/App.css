@@ -1,38 +1,109 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: rgb(184, 98, 112);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loader {
+  margin-top: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(250, 99, 124);
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: rgb(231, 91, 201);
+}
+
+table {
+  margin: 30px auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+table a {
+  color: black;
+  text-decoration: none;
+}
+
+button,
+input[type="submit"] {
+  border: none;
   color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  background: linear-gradient(90deg, rgb(252, 33, 88), rgb(193, 209, 240));
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover,
+input[type="submit"]:hover {
+  background: linear-gradient(90deg, rgb(193, 209, 240), rgb(252, 33, 88));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-items:hover {
+  background-color: rgb(255, 241, 241);
+}
+
+.card {
+  width: 350px;
+  margin: 0 auto 50px;
+  text-align: left;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 20px 30px;
+  background-color: rgb(246, 239, 255);
+}
+
+.edit {
+  margin-right: 10px;
+}
+
+form div {
+  margin: 15px 0;
+}
+
+form div input {
+  padding: 5px;
+}
+
+
+footer{
+  position: absolute;
+  bottom: 100px;
+  left: 200px;
+  font-size: 1.2rem;
+}
+
+footer > a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgb(31, 29, 29);
+  cursor: pointer;
 }
